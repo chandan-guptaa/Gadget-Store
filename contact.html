@@ -29,14 +29,33 @@
         </form>
     </section>
 
+    <!-- Map Section for Contact Page -->
+    <section id="contact-map">
+        <h2>Our Location</h2>
+        <div id="contact-map-container" style="width: 100%; height: 400px;"></div>
+    </section>
+
     <!-- Footer with Contact Info -->
     <footer>
         <section class="contact-details">
             <p>&copy; 2025 GadgetHub. All Rights Reserved.</p>
             <p>Email: contact@gadgethub.com | Phone: +1-800-123-4567</p>
+            <!-- Map in footer -->
+            <div id="footer-map" style="width: 100%; height: 200px;"></div>
         </section>
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        // Initialize the map for contact page
+        function initContactMap() {
+            var map = new google.maps.Map(document.getElementById('contact-map-container'), {
+                center: { lat: 40.748817, lng: -73.985428 }, // Example coordinates (NYC)
+                zoom: 13
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initContactMap"></script>
 </body>
 </html>
+
