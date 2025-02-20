@@ -137,3 +137,11 @@ footer {
     width: 100%;
     height: 400px; /* Adjust map height as needed */
 }
+
+
+.thank-you {
+    font-size: 1.2rem;
+    color: green;
+    font-weight: bold;
+    margin-top: 1rem;
+}
